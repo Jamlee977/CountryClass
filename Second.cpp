@@ -93,7 +93,7 @@ char* Country::largestArea(Country countries[], size_t Size)
     double max = 0;
     for (size_t i = 0; i < Size; i++)
     {
-        if (countries[i].getArea() > max) max = countries[i].getArea();
+        if (countries[i].getArea() >= max) max = countries[i].getArea();
     }
 
     for (size_t i = 0; i < Size; i++)
@@ -107,7 +107,7 @@ char* Country::largestPopulation(Country countries[], size_t Size)
     size_t max = 0;
     for (size_t i = 0; i < Size; i++)
     {
-        if (countries[i].getPopulation() > max) max = countries[i].getPopulation();
+        if (countries[i].getPopulation() >= max) max = countries[i].getPopulation();
     }
 
     for (size_t i = 0; i < Size; i++)
@@ -121,7 +121,7 @@ char* Country::largestPopulationDensity(Country countries[], size_t Size)
     double max = 0;
     for (size_t i = 0; i < Size; i++)
     {
-        if ((countries[i].getPopulation() / countries[i].getArea()) > max)
+        if ((countries[i].getPopulation() / countries[i].getArea()) >= max)
             max = (countries[i].getPopulation() / countries[i].getArea());
     }
 
