@@ -156,7 +156,7 @@ int main()
         countries[i].setArea(area);
     }
 
-    cout << "The largest population of all countries goes to: "
+    cout << "\nThe largest population of all countries goes to: "
         << Country::largestPopulation(countries, SIZE) << endl;
     cout << "The largest area of all countries goes to: "
         << Country::largestArea(countries, SIZE) << endl;
