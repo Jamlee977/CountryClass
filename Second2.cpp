@@ -175,7 +175,7 @@ int main()
 		<< "km which contains " << largest_area.getPopulation() << " people." << endl;
     cout << "The largest population density goes to: "
         << largestPopDen.getName() << " which has " << largestPopDen.getPopulation()
-		<< " people in " << largestPopDen.getArea() << "km" << endl;
+		<< " people in " << largestPopDen.getArea() << "km." << endl;
 
     delete[] countries;
     return 0;
